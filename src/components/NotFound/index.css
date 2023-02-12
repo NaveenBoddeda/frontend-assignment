@@ -39,7 +39,7 @@ button {
   border-width: 0px;
   outline: none;
 }
-.line {
+l .line {
   height: 1px;
   width: 100%;
   border: 0 none;
@@ -48,8 +48,24 @@ button {
 }
 .checkbox-position {
   align-self: flex-start;
+  border-width: 2px;
 }
 .send-button {
   text-align: center;
   background-color: blue;
+}
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.checkbox-error {
+  background-color: red;
+  color: white;
+  font-size: 15px;
 }
